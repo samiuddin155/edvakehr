@@ -172,7 +172,7 @@ export function createClinicMcpServer(dataset: ClinicDataset, state: ToolState):
       state.verifiedPatientId = null;
       state.verification = "unverified";
       state.persistChanges = persist_changes;
-      state.appointments = persist_changes ? await loadAppointmentsFresh(dataset.appointments) : dataset.appointments.map((appointment) => ({ ...appointment }));
+      state.appointments = await loadAppointmentsFresh(dataset.appointments);
       state.routes = [];
       state.replyDraft = "";
       return result({ ready: true, message_id: message.id });

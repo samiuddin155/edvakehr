@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import type {
@@ -12,6 +12,7 @@ import type {
 } from "./types.js";
 
 let cachedDataset: Promise<ClinicDataset> | undefined;
+const localAppointmentsPath = resolve(process.cwd(), ".runtime", "appointments.json");
 
 async function readFixture<T>(name: string): Promise<T> {
   const path = resolve(process.cwd(), "edvak_forge_data", name);
@@ -98,7 +99,14 @@ export function isSupabaseConfigured(): boolean {
 
 export async function loadAppointmentsFresh(fallback: Appointment[]): Promise<Appointment[]> {
   const supabase = createAdminClient();
-  if (!supabase) return fallback.map((appointment) => ({ ...appointment }));
+  if (!supabase) {
+    let saved: Appointment[] = [];
+    try { saved = JSON.parse(await readFile(localAppointmentsPath, "utf8")) as Appointment[]; }
+    catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
+    const byId = new Map(fallback.map((appointment) => [appointment.id, { ...appointment }]));
+    for (const appointment of saved) byId.set(appointment.id, appointment);
+    return [...byId.values()];
+  }
   const { data, error } = await supabase.from("appointments").select("source_record").order("appointment_date").order("start_time");
   if (error) throw new Error(`Could not refresh appointments from Supabase: ${error.message}`);
   return (data ?? []).map((row) => row.source_record as Appointment);
@@ -106,7 +114,16 @@ export async function loadAppointmentsFresh(fallback: Appointment[]): Promise<Ap
 
 export async function persistAppointment(appointment: Appointment): Promise<void> {
   const supabase = createAdminClient();
-  if (!supabase) return;
+  if (!supabase) {
+    const appointments = await loadAppointmentsFresh((await getDataset()).appointments);
+    const byId = new Map(appointments.map((item) => [item.id, item]));
+    byId.set(appointment.id, appointment);
+    await mkdir(resolve(process.cwd(), ".runtime"), { recursive: true });
+    const temporaryPath = `${localAppointmentsPath}.${process.pid}.tmp`;
+    await writeFile(temporaryPath, `${JSON.stringify([...byId.values()], null, 2)}\n`, "utf8");
+    await rename(temporaryPath, localAppointmentsPath);
+    return;
+  }
   const { error } = await supabase.from("appointments").upsert({
     appointment_id: appointment.id,
     patient_id: appointment.patient_id,

@@ -1,9 +1,9 @@
 import type { AgentResult, ClinicDataset, ExpectedLabel, IncomingMessage, RunEvaluation } from "./types.js";
 import { processMessage } from "./agent.js";
 
-export async function evaluateDataset(dataset: ClinicDataset, messages = dataset.messages) {
+export async function evaluateDataset(dataset: ClinicDataset, messages = dataset.messages, options: { analysisMode?: "model" | "rules" } = {}) {
   const results: AgentResult[] = [];
-  for (const message of messages) results.push(await processMessage(message, dataset, { persistChanges: false }));
+  for (const message of messages) results.push(await processMessage(message, dataset, { persistChanges: false, analysisMode: options.analysisMode }));
   const labels = new Map(dataset.labels.map((label) => [label.id, label]));
   const strictEmergencyIds = new Set(dataset.labels.filter((label) => label.accepted_urgency.length === 1 && label.accepted_urgency[0] === "emergency").map((label) => label.id));
   let urgencyCorrect = 0, exact = 0, patientCorrect = 0, tp = 0, fp = 0, fn = 0;
@@ -52,7 +52,17 @@ export async function evaluateDataset(dataset: ClinicDataset, messages = dataset
     missedEmergencies,
     perMessage,
   };
-  return { results, evaluation };
+  return {
+    results,
+    evaluation,
+    run: {
+      mode: options.analysisMode ?? "model",
+      model: results.find((item) => item.mode === "openrouter")?.model ?? "local-rules",
+      prompt_tokens: results.reduce((total, item) => total + item.usage.prompt_tokens, 0),
+      completion_tokens: results.reduce((total, item) => total + item.usage.completion_tokens, 0),
+      cost: results.some((item) => item.usage.cost !== null) ? results.reduce((total, item) => total + (item.usage.cost ?? 0), 0) : null,
+    },
+  };
 }
 
 export function messageFor(dataset: ClinicDataset, id: string): IncomingMessage | undefined { return dataset.messages.find((message) => message.id === id); }

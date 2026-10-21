@@ -38,3 +38,23 @@ export async function getSavedAgentRuns(): Promise<AgentResult[]> {
   if (error) throw new Error(`Could not read saved agent results: ${error.message}`);
   return (data ?? []).map((row) => row.payload as AgentResult);
 }
+
+export async function updateSavedAgentRun(messageId: string, update: Record<string, unknown>): Promise<Record<string, unknown>> {
+  if (!isSupabaseConfigured()) throw new Error("Persistent run review requires Supabase configuration.");
+  const supabase = admin();
+  const { data, error } = await supabase.from("agent_runs").select("payload").eq("message_id", messageId).maybeSingle();
+  if (error) throw new Error(`Could not load saved agent result: ${error.message}`);
+  if (!data) throw new Error("Saved agent result not found.");
+  const payload = { ...(data.payload as Record<string, unknown>), ...update };
+  const { error: updateError } = await supabase.from("agent_runs").update({ payload }).eq("message_id", messageId);
+  if (updateError) throw new Error(`Could not update saved agent result: ${updateError.message}`);
+  return payload;
+}
+
+export async function updateQueueItemStatus(messageId: string, queue: string, status: "open" | "resolved") {
+  if (!isSupabaseConfigured()) throw new Error("Persistent queue actions require Supabase configuration.");
+  const { data, error } = await admin().from("agent_queue_items").update({ status }).eq("message_id", messageId).eq("queue", queue).select("message_id,queue,reason,status,created_at").maybeSingle();
+  if (error) throw new Error(`Could not update staff queue: ${error.message}`);
+  if (!data) throw new Error("Queue item not found.");
+  return data;
+}
