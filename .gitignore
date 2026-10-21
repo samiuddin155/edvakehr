@@ -8,3 +8,22 @@ coverage/
 .runtime/
 .DS_Store
 npm-debug.log*
+
+# Local AI tooling and design artifacts
+/.agents/
+/.codex/
+/.cursor/
+/.gemini/
+/.taste-skill/
+/skills-lock.json
+/design-qa.md
+
+# Temporary files and logs
+/tmp/
+*.log
+*.tmp
+*.bak
+
+# Environment attachments and confidential assignment brief
+env.txt
+/Edvak_Forge_Take-Home_Project.pdf
