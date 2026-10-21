@@ -6,7 +6,7 @@ import { getDataset, loadAppointmentsFresh, isSupabaseConfigured, persistAppoint
 import { evaluateDataset, messageFor } from "./evaluate.js";
 import { processMessage, withMcpSession } from "./agent.js";
 import { getClinicMcpClient, getClinicMcpStatus } from "./mcp-client.js";
-import { getSavedAgentRuns, getSavedQueueItems, saveAgentRun, updateQueueItemStatus, updateSavedAgentRun } from "./run-store.js";
+import { getSavedAgentRun, getSavedAgentRuns, getSavedQueueItems, saveAgentRun, updateQueueItemStatus, updateSavedAgentRun } from "./run-store.js";
 import type { Appointment, IncomingMessage, Patient, RouteQueue } from "./types.js";
 
 const app = express();
@@ -158,14 +158,43 @@ app.post("/api/queues/:messageId/:queue/resolve", async (req, res) => {
 });
 
 app.post("/api/runs/:id/review", async (req, res) => {
-  try { res.json({ result: await updateSavedAgentRun(req.params.id, { review_status: "reviewed", reviewed_at: new Date().toISOString() }) }); }
+  try {
+    const current = await getSavedAgentRun(req.params.id);
+    if (current.delivery_status === "demo_sent") return res.status(409).json({ error: "This demo reply has already been marked sent." });
+    if (typeof current.draft_updated_at !== "string" || typeof current.reply_draft !== "string" || !current.reply_draft.trim()) return res.status(409).json({ error: "Save a non-empty draft before staff review." });
+    res.json({ result: await updateSavedAgentRun(req.params.id, { review_status: "reviewed", reviewed_at: new Date().toISOString() }) });
+  }
   catch (error) { res.status(400).json({ error: error instanceof Error ? error.message : "Could not save review status" }); }
 });
 app.patch("/api/runs/:id/draft", async (req, res) => {
   const draft = req.body?.reply_draft;
   if (typeof draft !== "string" || draft.length > 2000) return res.status(400).json({ error: "Draft must be text under 2,000 characters." });
-  try { res.json({ result: await updateSavedAgentRun(req.params.id, { reply_draft: draft, draft_updated_at: new Date().toISOString() }) }); }
+  try {
+    const current = await getSavedAgentRun(req.params.id);
+    if (current.delivery_status === "demo_sent") return res.status(409).json({ error: "A sent demo reply cannot be edited." });
+    const changed = current.reply_draft !== draft;
+    const firstSave = typeof current.draft_updated_at !== "string";
+    const update: Record<string, unknown> = {
+      reply_draft: draft,
+      draft_updated_at: changed || firstSave ? new Date().toISOString() : current.draft_updated_at,
+    };
+    if (changed || firstSave) Object.assign(update, { review_status: null, reviewed_at: null, delivery_status: null, sent_at: null });
+    res.json({ result: await updateSavedAgentRun(req.params.id, update) });
+  }
   catch (error) { res.status(400).json({ error: error instanceof Error ? error.message : "Could not save draft" }); }
+});
+app.post("/api/runs/:id/send", async (req, res) => {
+  try {
+    const current = await getSavedAgentRun(req.params.id);
+    if (current.delivery_status === "demo_sent") return res.status(409).json({ error: "This demo reply has already been marked sent." });
+    if (current.review_status !== "reviewed" || typeof current.reviewed_at !== "string") return res.status(409).json({ error: "A staff member must review the saved draft before sending." });
+    if (typeof current.draft_updated_at !== "string" || typeof current.reply_draft !== "string" || !current.reply_draft.trim()) return res.status(409).json({ error: "Save a non-empty draft before sending." });
+    if (Date.parse(current.reviewed_at) < Date.parse(current.draft_updated_at)) return res.status(409).json({ error: "The draft changed after review. Review the latest version before sending." });
+    const sentAt = new Date().toISOString();
+    const result = await updateSavedAgentRun(req.params.id, { delivery_status: "demo_sent", sent_at: sentAt });
+    res.json({ result, delivery: "demo_only" });
+  }
+  catch (error) { res.status(400).json({ error: error instanceof Error ? error.message : "Could not record the demo send" }); }
 });
 app.post("/api/process/:id", async (req, res) => {
   try {

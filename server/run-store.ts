@@ -39,13 +39,19 @@ export async function getSavedAgentRuns(): Promise<AgentResult[]> {
   return (data ?? []).map((row) => row.payload as AgentResult);
 }
 
+export async function getSavedAgentRun(messageId: string): Promise<Record<string, unknown>> {
+  if (!isSupabaseConfigured()) throw new Error("Persistent run review requires Supabase configuration.");
+  const { data, error } = await admin().from("agent_runs").select("payload").eq("message_id", messageId).maybeSingle();
+  if (error) throw new Error(`Could not load saved agent result: ${error.message}`);
+  if (!data) throw new Error("Saved agent result not found.");
+  return data.payload as Record<string, unknown>;
+}
+
 export async function updateSavedAgentRun(messageId: string, update: Record<string, unknown>): Promise<Record<string, unknown>> {
   if (!isSupabaseConfigured()) throw new Error("Persistent run review requires Supabase configuration.");
   const supabase = admin();
-  const { data, error } = await supabase.from("agent_runs").select("payload").eq("message_id", messageId).maybeSingle();
-  if (error) throw new Error(`Could not load saved agent result: ${error.message}`);
-  if (!data) throw new Error("Saved agent result not found.");
-  const payload = { ...(data.payload as Record<string, unknown>), ...update };
+  const existing = await getSavedAgentRun(messageId);
+  const payload = { ...existing, ...update };
   const { error: updateError } = await supabase.from("agent_runs").update({ payload }).eq("message_id", messageId);
   if (updateError) throw new Error(`Could not update saved agent result: ${updateError.message}`);
   return payload;

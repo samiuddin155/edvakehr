@@ -1,0 +1,1016 @@
+{
+ "url": "http://127.0.0.1:5173",
+ "at": "2026-10-21T17:26:28.604Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.88,
+    0.88,
+    0.88,
+    0.88,
+    0.88
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3765,
+     "screens": 4.2,
+     "words": 1038,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 60,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Front Desk Inbox",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 25,
+     "vw": 1.7,
+     "font": "DM Sans",
+     "weight": 650,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 90,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Front Desk Inbox",
+     "words": 3,
+     "lines": 1,
+     "size": 25,
+     "font": "DM Sans"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      21,
+      25
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 11,
+      "leading": 1.4,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.9
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 25,
+      "vw": 1.7,
+      "font": "DM Sans",
+      "text": "Front Desk Inbox"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.06,
+     "centerShare": 0.05,
+     "smallText": 114
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f4f5",
+     "bodyBgHsl": {
+      "h": 200,
+      "s": 0.13,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f2f4f5",
+       "top": 0,
+       "hsl": {
+        "h": 200,
+        "s": 0.13,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 8,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4e5d70",
+       "share": 0.45
+      },
+      {
+       "color": "#62686d",
+       "share": 0.16
+      },
+      {
+       "color": "#24292c",
+       "share": 0.09
+      },
+      {
+       "color": "#3c555d",
+       "share": 0.04
+      },
+      {
+       "color": "#58677a",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#202528"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 54,
+     "inHero": 18,
+     "radius": 0,
+     "height": 78,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Inbox 39",
+      "Try a message",
+      "Evaluation Lab",
+      "Process with AI",
+      "Needs review"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 60,
+     "hairlineSamples": [
+      "aside.sidebar 220px",
+      "main.main-content 1196px",
+      "header.topbar 1195px",
+      "div.panel-heading 309px",
+      "div.filter-strip 309px"
+     ],
+     "outlinedBoxes": 8,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 9,
+     "boxRadius": 9,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 3512
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 884,
+     "floatingPill": true,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3765,
+    "margins": {
+     "left": 267,
+     "right": 60
+    },
+    "sections": [
+     {
+      "sel": "section.inbox-workspace",
+      "tag": "section",
+      "top": 251,
+      "height": 3247,
+      "words": 832,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Woke up with crushing chest pain going into my lef",
+       "size": 15,
+       "tag": "h2"
+      },
+      "left": 267,
+      "right": 48,
+      "textLeft": 274,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.support-grid",
+      "tag": "section",
+      "top": 3512,
+      "height": 193,
+      "words": 88,
+      "media": 0,
+      "middle": 61,
+      "heading": null,
+      "left": 285,
+      "right": 47,
+      "textLeft": 285,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Front Desk Inbox",
+      "size": 25,
+      "top": 90,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 260,
+      "n": 2
+     },
+     {
+      "x": 597,
+      "n": 1
+     },
+     {
+      "x": 610,
+      "n": 1
+     },
+     {
+      "x": 1076,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 11,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 720,
+     "y": 780,
+     "w": 720,
+     "h": 120
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#f2f4f5",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 30,
+     "right": 50
+    },
+    "hero": {
+     "text": "Front Desk Inbox",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 25,
+     "vw": 1.7,
+     "font": "DM Sans",
+     "weight": 650,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 90,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [
+      {
+       "diff": 2865,
+       "top": 8
+      }
+     ],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 14,
+     "radii": [
+      [
+       9,
+       5
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       10,
+       3
+      ],
+      [
+       16,
+       1
+      ],
+      [
+       8,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 219,
+       "size": 28,
+       "radius": "7px"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 9,
+     "tabularShare": 1,
+     "kpiMax": 21
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.9,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      21,
+      25
+     ]
+    },
+    "title": {
+     "text": "Front Desk Inbox",
+     "size": 25,
+     "top": 90
+    },
+    "colourShare": 0.01
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1756,
+     "screens": 2.1,
+     "words": 806,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 60,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Front Desk Inbox",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 22,
+     "vw": 5.6,
+     "font": "DM Sans",
+     "weight": 650,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 128,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Front Desk Inbox",
+     "words": 3,
+     "lines": 1,
+     "size": 22,
+     "font": "DM Sans"
+    },
+    "headings": [
+     {
+      "text": "Front Desk Inbox",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "weight": 650,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 128,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      22
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 11,
+      "leading": 1.4,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.9
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 22,
+      "vw": 5.6,
+      "font": "DM Sans",
+      "text": "Front Desk Inbox"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.07,
+     "centerShare": 0.04,
+     "smallText": 91
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f2f4f5",
+     "bodyBgHsl": {
+      "h": 200,
+      "s": 0.13,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4e5d70",
+       "share": 0.49
+      },
+      {
+       "color": "#62686d",
+       "share": 0.18
+      },
+      {
+       "color": "#24292c",
+       "share": 0.11
+      },
+      {
+       "color": "#3c555d",
+       "share": 0.05
+      },
+      {
+       "color": "#58677a",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#202528"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 22,
+     "inHero": 5,
+     "radius": 0,
+     "height": 78,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Try a message",
+      "Evaluation Lab",
+      "Process with AI",
+      "Needs review",
+      "Appointments"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 50,
+     "hairlineSamples": [
+      "aside.sidebar 390px",
+      "header.topbar 390px",
+      "div.panel-heading 356px",
+      "div.filter-strip 356px",
+      "button.message-row.selected 344px"
+     ],
+     "outlinedBoxes": 5,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 9,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 25,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 590
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 54,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1756,
+    "margins": {
+     "left": 23,
+     "right": 23
+    },
+    "sections": [
+     {
+      "sel": "div.page-header",
+      "tag": "div",
+      "top": 128,
+      "height": 152,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Front Desk Inbox",
+       "size": 22,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 39,
+      "textLeft": 16,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.stat-grid",
+      "tag": "div",
+      "top": 294,
+      "height": 208,
+      "words": 29,
+      "media": 0,
+      "middle": 30,
+      "heading": null,
+      "left": 51,
+      "right": 28,
+      "textLeft": 51,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.inbox-workspace",
+      "tag": "section",
+      "top": 517,
+      "height": 594,
+      "words": 123,
+      "media": 0,
+      "middle": 3,
+      "heading": null,
+      "left": 23,
+      "right": 0,
+      "textLeft": 30,
+      "textRight": -24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.support-grid",
+      "tag": "section",
+      "top": 1123,
+      "height": 580,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Front Desk Inbox",
+      "size": 22,
+      "top": 128,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 1,
+    "bodySize": 11,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#f2f4f5",
+    "sidebar": null,
+    "topbar": {
+     "h": 54
+    },
+    "canvas": {
+     "left": 23,
+     "right": 23
+    },
+    "hero": {
+     "text": "Front Desk Inbox",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 22,
+     "vw": 5.6,
+     "font": "DM Sans",
+     "weight": 650,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 128,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 8,
+     "radii": [
+      [
+       0,
+       3
+      ],
+      [
+       9,
+       3
+      ],
+      [
+       8,
+       1
+      ],
+      [
+       10,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 7,
+     "tabularShare": 1,
+     "kpiMax": 18
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.9,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      22
+     ]
+    },
+    "title": {
+     "text": "Front Desk Inbox",
+     "size": 22,
+     "top": 128
+    },
+    "colourShare": 0.016
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "90% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-row",
+   "width": 1440,
+   "message": "1 pair(s) of cards in one row end at different heights (by 2865px).",
+   "fix": "Cards that share a row share a bottom edge: balance them by their content (the same number of rows, a block of similar height beside it), or stack them. In testing, ragged rows were marked down every time."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Asus\\Documents\\GitHub\\edvakehr\\.taste-skill\\icons-centered\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Asus\\Documents\\GitHub\\edvakehr\\.taste-skill\\icons-centered\\desktop-page-01.jpg",
+    "C:\\Users\\Asus\\Documents\\GitHub\\edvakehr\\.taste-skill\\icons-centered\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Asus\\Documents\\GitHub\\edvakehr\\.taste-skill\\icons-centered\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Asus\\Documents\\GitHub\\edvakehr\\.taste-skill\\icons-centered\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
