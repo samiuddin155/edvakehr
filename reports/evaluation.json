@@ -1,0 +1,2419 @@
+{
+  "generated_at": "2026-10-21T11:58:34.612Z",
+  "data_source": "json",
+  "mode": "heuristic",
+  "model": "local-rules",
+  "evaluation": {
+    "total": 40,
+    "urgencyAccuracy": 1,
+    "emergencyRecall": 1,
+    "actionExactMatch": 1,
+    "actionMicroPrecision": 1,
+    "actionMicroRecall": 1,
+    "actionMicroF1": 1,
+    "patientMatchAccuracy": 1,
+    "mustNotViolations": [],
+    "missedEmergencies": [],
+    "perMessage": [
+      {
+        "id": "M001",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M002",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M003",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M004",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M005",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M006",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M007",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M008",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M009",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M010",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M011",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M012",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M013",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M014",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M015",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M016",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M017",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M018",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M019",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M020",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M021",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M022",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M023",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M024",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M025",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M026",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M027",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M028",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M029",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M030",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M031",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M032",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M033",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M034",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M035",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M036",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M037",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M038",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M039",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      },
+      {
+        "id": "M040",
+        "urgencyCorrect": true,
+        "actionsExact": true,
+        "patientCorrect": true,
+        "missedEmergency": false,
+        "violations": []
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "M001",
+      "patient_id": "P002",
+      "matched_patient_id": "P002",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "prepare_refill_for_approval"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill request prepared for prescriber review; not approved or sent."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your refill request has been sent to the provider for review. The prescription still requires provider approval.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P002."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M002",
+      "patient_id": "P007",
+      "matched_patient_id": "P007",
+      "intents": [
+        "reschedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "reschedule_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "get_patient_appointments",
+        "find_appointment_slots",
+        "reschedule_appointment",
+        "draft_reply"
+      ],
+      "reply_draft": "Your appointment has been moved to 2026-11-13 at 13:00 with KIM.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: reschedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P007."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, get_patient_appointments, find_appointment_slots, reschedule_appointment, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M003",
+      "patient_id": "P003",
+      "matched_patient_id": "P003",
+      "intents": [
+        "clinical"
+      ],
+      "urgency": "emergency",
+      "actions": [
+        "escalate_emergency"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Possible emergency symptom; immediate human review required."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Please call 911 or go to the nearest emergency department now. We have alerted the clinic.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: clinical · emergency. Rule-based red-flag match; human escalation required."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P003."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M004",
+      "patient_id": "P004",
+      "matched_patient_id": "P004",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "refill_needs_visit",
+        "offer_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "draft_reply"
+      ],
+      "reply_draft": "We can’t prepare this refill because a visit is due. We can help arrange an appointment, and the provider will review the medication request.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P004."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M005",
+      "patient_id": "P006",
+      "matched_patient_id": "P006",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_provider"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Controlled substance; route to prescribing provider."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P006."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M006",
+      "patient_id": "P005",
+      "matched_patient_id": "P005",
+      "intents": [
+        "refill",
+        "clinical"
+      ],
+      "urgency": "urgent",
+      "actions": [
+        "prepare_refill_for_approval",
+        "route_to_clinician"
+      ],
+      "routed_to": [
+        "provider_refills",
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill request prepared for prescriber review; not approved or sent."
+        },
+        {
+          "queue": "clinician_urgent",
+          "reason": "Same-day clinician review requested for a serious mood or safety concern."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your refill request has been sent to the provider for review. We have also alerted a clinician to the concern in your message for same-day follow-up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill, clinical · urgent. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P005."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills, clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M007",
+      "patient_id": null,
+      "matched_patient_id": null,
+      "intents": [
+        "schedule",
+        "new_patient"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "offer_new_patient_booking",
+        "answer_directly"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "new_patient",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule, new_patient · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Identity not verified; protected details withheld."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M008",
+      "patient_id": "P010",
+      "matched_patient_id": "P010",
+      "intents": [
+        "billing"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_billing"
+      ],
+      "routed_to": [
+        "billing"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "billing",
+          "reason": "Billing or insurance question requires billing staff; no account balance data is available."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: billing · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P010."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "billing"
+        }
+      ]
+    },
+    {
+      "id": "M009",
+      "patient_id": "P012",
+      "matched_patient_id": "P012",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "prepare_refill_for_approval"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill request prepared for prescriber review; not approved or sent."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your refill request has been sent to the provider for review. The prescription still requires provider approval.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P012."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M010",
+      "patient_id": "P013",
+      "matched_patient_id": "P013",
+      "intents": [
+        "schedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "book_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "book_appointment",
+        "draft_reply"
+      ],
+      "reply_draft": "Your follow up is booked for 2026-11-17 at 09:00.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P013."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, book_appointment, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M011",
+      "patient_id": null,
+      "matched_patient_id": "P002",
+      "intents": [
+        "records"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "request_verification"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "draft_reply"
+      ],
+      "reply_draft": "For your privacy, please contact the clinic through your verified patient portal or a phone number on file before we send records.",
+      "verification": "unverified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: records · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Identity not verified; protected details withheld."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M012",
+      "patient_id": "P014",
+      "matched_patient_id": "P014",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_provider"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Controlled substance; route to prescribing provider."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P014."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M013",
+      "patient_id": "P015",
+      "matched_patient_id": "P015",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "refill_too_early"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "draft_reply"
+      ],
+      "reply_draft": "It is too early to prepare this request. The earliest date is 2026-11-17.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P015."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M014",
+      "patient_id": "P017",
+      "matched_patient_id": "P017",
+      "intents": [
+        "clinical"
+      ],
+      "urgency": "emergency",
+      "actions": [
+        "escalate_emergency"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Possible emergency symptom; immediate human review required."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Please call 911 or go to the nearest emergency department now. We have alerted the clinic.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: clinical · emergency. Rule-based red-flag match; human escalation required."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P017."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M015",
+      "patient_id": "P009",
+      "matched_patient_id": "P009",
+      "intents": [
+        "schedule",
+        "clinical"
+      ],
+      "urgency": "urgent",
+      "actions": [
+        "book_appointment"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Sick visit requested; clinician review for time-sensitive symptoms."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "book_appointment",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your sick visit is booked for 2026-11-09 at 09:00.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule, clinical · urgent. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P009."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, book_appointment, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M016",
+      "patient_id": "P018",
+      "matched_patient_id": "P018",
+      "intents": [
+        "schedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "book_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "book_appointment",
+        "draft_reply"
+      ],
+      "reply_draft": "Your annual physical is booked for 2026-11-16 at 09:00.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P018."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, book_appointment, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M017",
+      "patient_id": "P020",
+      "matched_patient_id": "P020",
+      "intents": [
+        "refill",
+        "clinical"
+      ],
+      "urgency": "emergency",
+      "actions": [
+        "escalate_emergency"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Possible emergency symptom; immediate human review required."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Please call 911 or go to the nearest emergency department now. We have alerted the clinic.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill, clinical · emergency. Rule-based red-flag match; human escalation required."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P020."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M018",
+      "patient_id": "P022",
+      "matched_patient_id": "P022",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "prepare_refill_for_approval",
+        "flag_suspicious_instruction"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill request prepared for prescriber review; not approved or sent."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your refill request has been sent to the provider for review. The prescription still requires provider approval.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P022."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M019",
+      "patient_id": "P021",
+      "matched_patient_id": "P021",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_provider"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Controlled substance; route to prescribing provider."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P021."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M020",
+      "patient_id": "P001",
+      "matched_patient_id": "P001",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "prepare_refill_for_approval"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill request prepared for prescriber review; not approved or sent."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Hemos enviado su solicitud de resurtido al proveedor para revisión. El medicamento requiere aprobación del proveedor.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P001."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M021",
+      "patient_id": "P008",
+      "matched_patient_id": "P008",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_provider"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "No refills remain; provider must issue a new prescription."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P008."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M022",
+      "patient_id": "P011",
+      "matched_patient_id": "P011",
+      "intents": [
+        "cancel"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "cancel_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "get_patient_appointments",
+        "cancel_appointment",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: cancel · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P011."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, get_patient_appointments, cancel_appointment, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M023",
+      "patient_id": "P019",
+      "matched_patient_id": "P019",
+      "intents": [
+        "admin"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "answer_directly"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "draft_reply"
+      ],
+      "reply_draft": "Our hours are Mon, Tue, Wed, Thu, Fri 09:00–17:00 (America/Chicago). We are closed on listed holidays, including 2026-11-26, 2026-11-27, 2026-12-25.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: admin · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P019."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M024",
+      "patient_id": "P023",
+      "matched_patient_id": "P023",
+      "intents": [
+        "schedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "book_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "book_appointment",
+        "draft_reply"
+      ],
+      "reply_draft": "Your annual physical is booked for 2026-11-16 at 09:00.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P023."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, book_appointment, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M025",
+      "patient_id": "P024",
+      "matched_patient_id": "P024",
+      "intents": [
+        "refill",
+        "billing"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "prepare_refill_for_approval",
+        "route_to_billing"
+      ],
+      "routed_to": [
+        "provider_refills",
+        "billing"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill request prepared for prescriber review; not approved or sent."
+        },
+        {
+          "queue": "billing",
+          "reason": "Billing or insurance question requires billing staff; no account balance data is available."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your refill request has been sent to the provider for review. The prescription still requires provider approval.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill, billing · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P024."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills, billing"
+        }
+      ]
+    },
+    {
+      "id": "M026",
+      "patient_id": "P016",
+      "matched_patient_id": "P016",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "urgent",
+      "actions": [
+        "refill_needs_visit",
+        "offer_appointment",
+        "route_to_provider"
+      ],
+      "routed_to": [
+        "provider_refills"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "provider_refills",
+          "reason": "Refill policy requires provider review and a visit."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "We can’t prepare this refill because a visit is due. We can help arrange an appointment, and the provider will review the medication request.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · urgent. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P016."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "provider_refills"
+        }
+      ]
+    },
+    {
+      "id": "M027",
+      "patient_id": null,
+      "matched_patient_id": "P013",
+      "intents": [
+        "third_party"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "decline_disclosure"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "draft_reply"
+      ],
+      "reply_draft": "For privacy, we can’t confirm or share another patient’s appointment details. Please ask the patient to contact us directly.",
+      "verification": "unverified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: third_party · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Identity not verified; protected details withheld."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M028",
+      "patient_id": "P025",
+      "matched_patient_id": "P025",
+      "intents": [
+        "schedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "offer_alternatives"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "find_appointment_slots",
+        "draft_reply"
+      ],
+      "reply_draft": "Dr. James Okafor is unavailable for that date. We can offer Dr. Maya Patel on 2026-11-18 at 09:00. Please confirm if you would like this alternative; it has not been booked.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P025."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M029",
+      "patient_id": "P002",
+      "matched_patient_id": "P002",
+      "intents": [
+        "schedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "offer_alternatives"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "draft_reply"
+      ],
+      "reply_draft": "That requested time is unavailable. An available alternative is 2026-11-12 at 13:00 with OKAFOR. Please confirm if you would like us to use it; it has not been booked.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P002."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M030",
+      "patient_id": "P019",
+      "matched_patient_id": "P019",
+      "intents": [
+        "clinical"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_clinician"
+      ],
+      "routed_to": [
+        "clinician_routine"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_routine",
+          "reason": "Clinical question requires clinician response; no diagnosis or advice generated."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: clinical · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P019."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_routine"
+        }
+      ]
+    },
+    {
+      "id": "M031",
+      "patient_id": "P007",
+      "matched_patient_id": "P007",
+      "intents": [
+        "other"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "acknowledge"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: other · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P007."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M032",
+      "patient_id": "P010",
+      "matched_patient_id": "P010",
+      "intents": [
+        "clinical"
+      ],
+      "urgency": "emergency",
+      "actions": [
+        "escalate_emergency"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Possible emergency symptom; immediate human review required."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Please call 911 or go to the nearest emergency department now. We have alerted the clinic.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: clinical · emergency. Rule-based red-flag match; human escalation required."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P010."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M033",
+      "patient_id": "P012",
+      "matched_patient_id": "P012",
+      "intents": [
+        "admin"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_front_desk"
+      ],
+      "routed_to": [
+        "front_desk"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "front_desk",
+          "reason": "Administrative profile update request."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: admin · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P012."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "front_desk"
+        }
+      ]
+    },
+    {
+      "id": "M034",
+      "patient_id": "P015",
+      "matched_patient_id": "P015",
+      "intents": [
+        "reschedule"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "reschedule_appointment"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "get_patient_appointments",
+        "find_appointment_slots",
+        "reschedule_appointment",
+        "draft_reply"
+      ],
+      "reply_draft": "Your appointment has been moved to 2026-11-23 at 09:00 with PATEL.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: reschedule · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P015."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, get_patient_appointments, find_appointment_slots, reschedule_appointment, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M035",
+      "patient_id": "P022",
+      "matched_patient_id": "P022",
+      "intents": [
+        "clinical"
+      ],
+      "urgency": "emergency",
+      "actions": [
+        "escalate_emergency"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Possible emergency symptom; immediate human review required."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Please call 911 or go to the nearest emergency department now. We have alerted the clinic.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: clinical · emergency. Rule-based red-flag match; human escalation required."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P022."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M036",
+      "patient_id": "P017",
+      "matched_patient_id": "P017",
+      "intents": [
+        "refill"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "refill_too_early"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "check_refill_eligibility",
+        "draft_reply"
+      ],
+      "reply_draft": "It is too early to prepare this request. The earliest date is 2026-11-21.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: refill · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P017."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, check_refill_eligibility, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M037",
+      "patient_id": "P023",
+      "matched_patient_id": "P023",
+      "intents": [
+        "admin"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "answer_directly"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "draft_reply"
+      ],
+      "reply_draft": "Our hours are Mon, Tue, Wed, Thu, Fri 09:00–17:00 (America/Chicago). We are closed on listed holidays, including 2026-11-26, 2026-11-27, 2026-12-25.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: admin · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P023."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M038",
+      "patient_id": null,
+      "matched_patient_id": null,
+      "intents": [
+        "spam"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "no_action"
+      ],
+      "routed_to": [],
+      "queue_reasons": [],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "unverified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: spam · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Identity not verified; protected details withheld."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "No human route created."
+        }
+      ]
+    },
+    {
+      "id": "M039",
+      "patient_id": "P014",
+      "matched_patient_id": "P014",
+      "intents": [
+        "schedule",
+        "clinical"
+      ],
+      "urgency": "urgent",
+      "actions": [
+        "book_appointment"
+      ],
+      "routed_to": [
+        "clinician_urgent"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "clinician_urgent",
+          "reason": "Sick visit requested; clinician review for time-sensitive symptoms."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "find_appointment_slots",
+        "book_appointment",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Your sick visit is booked for 2026-11-10 at 09:00.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: schedule, clinical · urgent. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P014."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, find_appointment_slots, book_appointment, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "clinician_urgent"
+        }
+      ]
+    },
+    {
+      "id": "M040",
+      "patient_id": "P009",
+      "matched_patient_id": "P009",
+      "intents": [
+        "records"
+      ],
+      "urgency": "routine",
+      "actions": [
+        "route_to_front_desk"
+      ],
+      "routed_to": [
+        "front_desk"
+      ],
+      "queue_reasons": [
+        {
+          "queue": "front_desk",
+          "reason": "Verified records request; staff must review and send through an approved channel."
+        }
+      ],
+      "tool_calls": [
+        "set_current_message",
+        "find_patient",
+        "route_message",
+        "draft_reply"
+      ],
+      "reply_draft": "Thanks for contacting Maplewood Family Clinic. Our team will review your message and follow up.",
+      "verification": "verified",
+      "model": "local-rules",
+      "mode": "heuristic",
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost": null
+      },
+      "trace": [
+        {
+          "step": "classification",
+          "detail": "heuristic: records · routine. Rule-based intent and urgency classification; verify before disclosing patient information."
+        },
+        {
+          "step": "identity",
+          "detail": "Verified patient P009."
+        },
+        {
+          "step": "policy and tools",
+          "detail": "set_current_message, find_patient, route_message, draft_reply"
+        },
+        {
+          "step": "human queues",
+          "detail": "front_desk"
+        }
+      ]
+    }
+  ]
+}
