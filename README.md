@@ -12,7 +12,7 @@ Copy-Item .env.example .env
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. Empty credentials select JSON fixtures and local rules. For model analysis, set `OPENROUTER_API_KEY`; `OPENROUTER_MODEL` defaults to `openai/gpt-4o-mini`. Keys stay on the server.
+`npm run dev` starts both the backend and frontend in one terminal. The dashboard starts after the API health check succeeds; Ctrl+C stops both. Open http://127.0.0.1:5173. Empty credentials select JSON fixtures and local rules. For model analysis, set `OPENROUTER_API_KEY`; `OPENROUTER_MODEL` defaults to `openai/gpt-4o-mini`. Keys stay on the server.
 
 Optional Supabase: set `SUPABASE_URL` and `SUPABASE_SECRET_KEY`, apply `supabase/migrations`, and run `npm run seed:supabase`. Draft/review/demo-send persistence requires Supabase. JSON mode supports the assignment's data option; local appointment changes persist in `.runtime/appointments.json`.
 

@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
-    "dev:api": "tsx watch server/api.ts",
-    "dev:web": "vite --host 127.0.0.1",
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "node --watch --import tsx server/api.ts",
+    "dev:web": "node scripts/dev-web.mjs",
     "mcp": "tsx server/mcp-stdio.ts",
     "evaluate": "tsx server/evaluate-cli.ts",
     "seed:supabase": "tsx scripts/seed-supabase.ts",
