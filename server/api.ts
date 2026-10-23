@@ -17,7 +17,7 @@ app.get("/api/health", async (_req, res) => {
   catch (error) { res.status(503).json({ ok: false, error: error instanceof Error ? error.message : "Data source unavailable" }); }
 });
 app.get("/api/inbox", async (_req, res) => {
-  try { const dataset = await getDataset(); res.json({ clinic: dataset.clinic, messages: dataset.messages }); }
+  try { const dataset = await getDataset(true); res.json({ clinic: dataset.clinic, messages: dataset.messages }); }
   catch (error) { res.status(503).json({ error: error instanceof Error ? error.message : "Data source unavailable" }); }
 });
 app.get("/api/runs", async (_req, res) => {
@@ -223,7 +223,7 @@ app.get("/api/evaluate", async (_req, res) => {
 app.post("/api/evaluate", async (req, res) => {
   const analysisMode = req.body?.analysisMode === "rules" ? "rules" : "model";
   try {
-    const dataset = await getDataset(); const output = await evaluateDataset(dataset, dataset.messages, { analysisMode });
+    const dataset = await getDataset(); const output = await evaluateDataset(dataset, undefined, { analysisMode });
     if (req.body?.persist !== false) for (const result of output.results) result.persisted = await saveAgentRun(result);
     res.json(output);
   } catch (error) { res.status(500).json({ error: error instanceof Error ? error.message : "Evaluation failed" }); }

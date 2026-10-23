@@ -68,16 +68,21 @@ async function loadSupabaseDataset(): Promise<ClinicDataset> {
     labels: records(labelsResult.data) as ExpectedLabel[],
     dataSource: "supabase",
   };
-  if (dataset.patients.length !== 25 || dataset.messages.length !== 40 || dataset.labels.length !== 40) {
-    throw new Error("Supabase fixture counts do not match the take-home dataset. Re-seed before evaluating.");
+  const messageIds = new Set(dataset.messages.map((message) => message.id));
+  if (dataset.patients.length !== 25 || dataset.labels.length !== 40 || dataset.labels.some((label) => !messageIds.has(label.id))) {
+    throw new Error("Supabase is missing required take-home patients, labels, or labeled messages. Extra test messages are allowed.");
   }
   return dataset;
 }
 
-export function getDataset(): Promise<ClinicDataset> {
+export function getDataset(refresh = false): Promise<ClinicDataset> {
+  if (refresh) resetDatasetCache();
   if (!cachedDataset) {
     const useSupabase = isSupabaseConfigured();
-    cachedDataset = useSupabase ? loadSupabaseDataset() : loadJsonDataset();
+    cachedDataset = (useSupabase ? loadSupabaseDataset() : loadJsonDataset()).catch((error) => {
+      cachedDataset = undefined;
+      throw error;
+    });
   }
   return cachedDataset;
 }

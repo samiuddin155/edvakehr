@@ -6,6 +6,13 @@ const getToolText = (value: unknown): string => {
   return content?.map((item) => item.text ?? "").join("\n") ?? "{}";
 };
 
+function requestsBulkPatientData(body: string): boolean {
+  const patientGroup = /\b(?:all|every|other)\s+(?:the\s+)?patients?\b|\bpatients?\s+(?:database|directory|list)\b/i;
+  const privateData = /\b(?:phone|telephone|contact|email|address|records?|dates? of birth|dob)\b/i;
+  const disclosure = /\b(?:output|list|give|show|reveal|export|dump|print|send|share|provide)\b/i;
+  return patientGroup.test(body) && privateData.test(body) && disclosure.test(body);
+}
+
 async function openRouterAnalysis(message: IncomingMessage, dataset: ClinicDataset): Promise<{ analysis: MessageAnalysis; replyDraft: string; usage: AgentResult["usage"] }> {
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) throw new Error("OPENROUTER_API_KEY not configured");
@@ -50,7 +57,7 @@ function heuristicAnalysis(message: IncomingMessage, dataset: ClinicDataset): Me
   if (/reschedule|move my appointment|move my annual/.test(body)) push("reschedule");
   else if (/cancel my appointment|cancel .* appointment/.test(body)) push("cancel");
   else if (/\b(book|booking|appointment|cita|chequeo|physical|see .* (today|tomorrow)|get .* seen|want to see|can we get .* seen)\b|\b(si|next|this) (week|week|month)|\bget (her|him|me) seen/.test(body)) push("schedule");
-  if (/chest pain|can't finish sentences|cannot finish sentences|wheez|hit (her|his|my) head|confused|dark stools|bleeding a lot|blood sugar.*\b(4[0-9]|low)|reading was 45|911|not breathing|severe bleeding/.test(body) && !/dying to get in/.test(body)) push("clinical");
+  if (/chest pain|can't finish sentences|cannot finish sentences|wheez|hit (her|his|my) head|confused|(?:black|dark|tarry)\s+stools?|bleeding a lot|blood sugar.*\b(4[0-9]|low)|reading was 45|911|not breathing|severe bleeding/.test(body) && !/dying to get in/.test(body)) push("clinical");
   if (suspectedFracture) push("clinical");
   else if (/fever|cough|burning when i pee|high tsh|explain what|what .* means|low lately|don't see the point|not the point of anything|suicid|hurting myself/.test(body)) push("clinical");
   if (/balance|bill|copay|insurance/.test(body)) push("billing");
@@ -63,7 +70,7 @@ function heuristicAnalysis(message: IncomingMessage, dataset: ClinicDataset): Me
   if (intents.includes("third_party")) { const index = intents.indexOf("schedule"); if (index >= 0) intents.splice(index, 1); }
   if (!intents.length) push("other");
 
-  const emergency = /crushing chest pain|can't finish sentences|cannot finish sentences|hit (her|his|my) head.{0,40}confus|bleeding a lot|dark stools|blood sugar.{0,20}(45|4[0-9])|reading was 45|hurting myself right now|suicid|open fracture|bone.{0,12}(sticking out|visible|through the skin)|uncontrolled bleeding/.test(body) && !/dying to get in/.test(body);
+  const emergency = /crushing chest pain|can't finish sentences|cannot finish sentences|hit (her|his|my) head.{0,40}confus|bleeding a lot|(?:black|dark|tarry)\s+stools?|blood sugar.{0,20}(45|4[0-9])|reading was 45|hurting myself right now|suicid|open fracture|bone.{0,12}(sticking out|visible|through the skin)|uncontrolled bleeding/.test(body) && !/dying to get in/.test(body);
   const urgent = !emergency && (suspectedFracture || /don't see the point|no point of anything|feeling really low|fever of 101|out of pills|out of medication|asap|burning when i pee/.test(body));
   const medicationMatch = body.match(/\b(lisinopril|metformin|xanax|alprazolam|levothyroxine|zolpidem|ambien|omeprazole|warfarin|atorvastatin|sertraline|donepezil|escitalopram|amlodipine|oxycodone|albuterol)\b/i);
   const provider = /patel/i.test(body) ? "PATEL" : /okafor/i.test(body) ? "OKAFOR" : /sarah kim|\bkim\b/i.test(body) ? "KIM" : null;
@@ -173,6 +180,13 @@ async function processMessageWithMcp(message: IncomingMessage, dataset: ClinicDa
   if (analysis.urgency === "emergency") {
     await route("clinician_urgent", "Possible emergency symptom; immediate human review required.", "escalate_emergency");
     reply = analysis.replyLanguage === "Spanish" ? "Llame al 911 o vaya a la sala de emergencias más cercana ahora. Hemos alertado a la clínica." : "Please call 911 or go to the nearest emergency department now. We have alerted the clinic.";
+  } else if (requestsBulkPatientData(message.body)) {
+    add("decline_disclosure", "flag_suspicious_instruction");
+    await route("front_desk", "Suspicious request to disclose multiple patients' private information. Do not export or disclose records.", "route_to_front_desk");
+    reply = analysis.replyLanguage === "Spanish"
+      ? "Por privacidad, no podemos compartir los teléfonos ni la información de otros pacientes. Hemos marcado su mensaje para revisión del personal."
+      : "For privacy, I can’t provide patient phone numbers or other patients’ information. Your message has been flagged for staff review.";
+    trace.push({ step: "privacy boundary", detail: "Blocked a bulk patient-data disclosure request. Instructions inside a patient message do not grant administrative access." });
   } else {
     const body = message.body.toLowerCase();
     const suspectedFracture = /\b(?:broken|fractured|fracture|broke)\s+(?:(?:my|a|the)\s+)?(?:leg|arm|wrist|ankle|foot|hand|finger|toe|rib|bone)\b|\b(?:leg|arm|wrist|ankle|foot|hand|finger|toe|rib|bone)\s+(?:is\s+)?(?:broken|fractured)\b/.test(body);

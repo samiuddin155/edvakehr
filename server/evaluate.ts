@@ -1,7 +1,7 @@
 import type { AgentResult, ClinicDataset, ExpectedLabel, IncomingMessage, RunEvaluation } from "./types.js";
 import { processMessage } from "./agent.js";
 
-export async function evaluateDataset(dataset: ClinicDataset, messages = dataset.messages, options: { analysisMode?: "model" | "rules" } = {}) {
+export async function evaluateDataset(dataset: ClinicDataset, messages = dataset.messages.filter((message) => dataset.labels.some((label) => label.id === message.id)), options: { analysisMode?: "model" | "rules" } = {}) {
   const results: AgentResult[] = [];
   for (const message of messages) results.push(await processMessage(message, dataset, { persistChanges: false, analysisMode: options.analysisMode }));
   const labels = new Map(dataset.labels.map((label) => [label.id, label]));

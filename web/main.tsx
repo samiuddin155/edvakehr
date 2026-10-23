@@ -73,7 +73,7 @@ const inferredCategory = (message: IncomingMessage) => {
   if (/chest pain|shortness of breath|can't finish sentences|bleeding/.test(body)) return "clinical";
   return "message";
 };
-const isEmergencyText = (body: string) => /chest pain|shortness of breath|can't finish sentences|dark stools|blood sugar.{0,20}(45|4[0-9])|hit .*head.{0,30}confus|not breathing/i.test(body);
+const isEmergencyText = (body: string) => /chest pain|shortness of breath|can't finish sentences|(?:black|dark|tarry)\s+stools?|blood sugar.{0,20}(45|4[0-9])|hit .*head.{0,30}confus|not breathing/i.test(body);
 const queueLabel = (queue: string) => humanize(queue.replace("clinician", "clinical"));
 const dateAfter = (value: string, days: number) => { const date = new Date(`${value}T12:00:00Z`); date.setUTCDate(date.getUTCDate() + days); return date.toISOString().slice(0, 10); };
 

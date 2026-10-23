@@ -9,6 +9,7 @@
     "dev:web": "node scripts/dev-web.mjs",
     "mcp": "tsx server/mcp-stdio.ts",
     "evaluate": "tsx server/evaluate-cli.ts",
+    "verify:safety": "tsx scripts/verify-safety-cases.ts",
     "seed:supabase": "tsx scripts/seed-supabase.ts",
     "build": "tsc -p tsconfig.server.json && vite build",
     "start": "node dist/server/api.js",

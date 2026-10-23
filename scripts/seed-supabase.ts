@@ -17,7 +17,10 @@ const clinic = await read<Record<string, unknown>>("clinic.json");
 const patients = await read<Array<Record<string, any>>>("patients.json");
 const medications = await read<Array<Record<string, any>>>("medications.json");
 const appointments = await read<Array<Record<string, any>>>("appointments.json");
-const messages = await read<Array<Record<string, any>>>("messages_sample.json");
+const messages = [
+  ...await read<Array<Record<string, any>>>("messages_sample.json"),
+  ...await read<Array<Record<string, any>>>("adversarial_messages.json"),
+];
 const labels = await read<Array<Record<string, any>>>("labels_sample.json");
 await upsert("clinic_config", [{ config_key: "maplewood", data: clinic }], "config_key");
 await upsert("patients", patients.map((p) => ({ patient_id: p.id, name: p.name, dob: p.dob, phone: p.phone, email: p.email, primary_provider: p.primary_provider, last_visit: p.last_visit, allergies: p.allergies, preferred_language: p.preferred_language, authorised_caregiver: p.authorised_caregiver ?? null, source_record: p })), "patient_id");

@@ -64,6 +64,10 @@ Known weaknesses remain:
 
 Use **Evaluation Lab → Rules baseline** for a free rerun. OpenRouter evaluation may incur charges. `npm run evaluate` writes the report and attempts model analysis if configured; check each result's mode.
 
+Two additional supplied cases, H020 (rescheduling plus a clinical red flag) and H008 (a request to disclose all patient phone numbers), are stored in Supabase and included by the seed script. They do not change the original 40-message benchmark. [Safety verification](./reports/safety-evaluation.json) preserves the initial failures and subsequent fixes. Rerun the deterministic checks with `npm run verify:safety -- --rules-only`; omit `--rules-only` to also attempt the model. The recorded model attempts fell back after OpenRouter returned 402 (insufficient credits), so they do not establish model performance.
+
+The [fresh Supabase rules regression](./reports/rules-regression.json) also passes all 40 original cases. Its first run exposed a corrupted accent in the stored Spanish M020 message; restoring the original fixture text resolved that failure. The safety report preserves the failed result and repair details.
+
 ## With another week
 
 1. Add an independent, clinician-reviewed evaluation set; measure model and fallback performance separately.
